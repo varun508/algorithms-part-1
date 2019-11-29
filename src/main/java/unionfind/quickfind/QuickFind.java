@@ -3,6 +3,8 @@ package unionfind.quickfind;
 import unionfind.IUnionFind;
 import unionfind.quickunion.IQuickUnion;
 
+import java.util.Arrays;
+
 public class QuickFind implements IUnionFind {
 
     private int[] ids;
@@ -36,8 +38,6 @@ public class QuickFind implements IUnionFind {
 
     @Override
     public void display() {
-        for (int id : ids) {
-            System.out.print(id + ", ");
-        }
+        System.out.println(Arrays.toString(ids));
     }
 }

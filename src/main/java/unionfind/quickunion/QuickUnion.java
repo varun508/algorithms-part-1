@@ -1,5 +1,7 @@
 package unionfind.quickunion;
 
+import java.util.Arrays;
+
 public class QuickUnion implements IQuickUnion {
 
     private int[] ids;
@@ -35,8 +37,6 @@ public class QuickUnion implements IQuickUnion {
 
     @Override
     public void display() {
-        for (int id : ids) {
-            System.out.print(id + ", ");
-        }
+        System.out.println(Arrays.toString(ids));
     }
 }

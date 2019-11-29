@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f8b6cb-8940-4d9a-91db-3e463be97e43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/unionfind/IUnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unionfind/quickunion/IQuickUnion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unionfind/quickunion/QuickUnion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unionfind/quickunion/QuickUnionRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unionfind/quickfind/IQuickFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/unionfind/quickunion/QuickUnion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/unionfind/quickunion/QuickUnion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/unionfind/quickfind/QuickFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unionfind/quickfind/QuickFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unionfind/quickunion/QuickUnion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unionfind/quickunion/QuickUnion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575050211366</updated>
-      <workItem from="1575050215181" duration="6599000" />
+      <workItem from="1575050215181" duration="6994000" />
     </task>
     <task id="LOCAL-00001" summary="Finish QuickFind Algorithm">
       <created>1575054603044</created>
@@ -193,5 +197,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/one$SampleTest_test.ic" NAME="SampleTest.test Coverage Results" MODIFIED="1575052595907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/one$QuickUnionRunner.ic" NAME="QuickUnionRunner Coverage Results" MODIFIED="1575057221514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>unionfind.quickunion.*</FILTER>
+    </SUITE>
   </component>
 </project>
