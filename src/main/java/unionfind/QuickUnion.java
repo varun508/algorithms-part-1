@@ -1,11 +1,13 @@
 package unionfind;
 
-import unionfind.UnionFind;
-
 public class QuickUnion extends UnionFind {
+
+    private int[] sizes;
 
     QuickUnion(int size) {
         super(size);
+        sizes = new int[size];
+        for (int i = 0; i < size; i++) sizes[i] = 1;
     }
 
     @Override
@@ -13,7 +15,13 @@ public class QuickUnion extends UnionFind {
         int rootOfP = root(p);
         int rootOfQ = root(q);
 
-        ids[rootOfP] = rootOfQ;
+        if (sizes[rootOfP] >= sizes[rootOfQ]) {
+            ids[rootOfQ] = rootOfP;
+            sizes[p] += sizes[q];
+        } else {
+            ids[rootOfP] = rootOfQ;
+            sizes[q] += sizes[p];
+        }
     }
 
     @Override

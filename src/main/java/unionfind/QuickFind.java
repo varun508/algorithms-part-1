@@ -1,7 +1,5 @@
 package unionfind;
 
-import unionfind.UnionFind;
-
 public class QuickFind extends UnionFind {
 
     QuickFind(int size) {

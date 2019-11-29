@@ -7,7 +7,7 @@ public class Runner {
         run(new QuickUnion(10));
     }
 
-    public static void run(UnionFind unionFind) {
+    private static void run(UnionFind unionFind) {
         unionFind.union(4, 3);
         unionFind.union(3, 8);
         unionFind.union(6, 5);
