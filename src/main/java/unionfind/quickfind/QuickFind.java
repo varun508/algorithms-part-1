@@ -1,12 +1,13 @@
 package unionfind.quickfind;
 
-import unionfind.quickfind.IQuickFind;
+import unionfind.IUnionFind;
+import unionfind.quickunion.IQuickUnion;
 
-public class QuickFind implements IQuickFind {
+public class QuickFind implements IUnionFind {
 
     private int[] ids;
 
-    public QuickFind(int size) {
+    QuickFind(int size) {
         ids = new int[size];
         init();
     }
@@ -33,7 +34,8 @@ public class QuickFind implements IQuickFind {
         return ids[p] == ids[q];
     }
 
-    void display() {
+    @Override
+    public void display() {
         for (int id : ids) {
             System.out.print(id + ", ");
         }
