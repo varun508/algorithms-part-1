@@ -1,4 +1,4 @@
-package unionfind;
+package unionfind.quickfind;
 
 public class QuickFindRunner {
     public static void main(String[] args) {
@@ -7,8 +7,6 @@ public class QuickFindRunner {
         quickFind.union(0, 7);
         quickFind.union(7, 3);
         quickFind.union(3, 9);
-
-        System.out.println(quickFind.connected(7,9));
 
         quickFind.display();
     }

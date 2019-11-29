@@ -63,7 +63,7 @@
       <module name="one.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="unionfind.*" />
+          <option name="PATTERN" value="unionfind.quickfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

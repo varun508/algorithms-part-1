@@ -1,4 +1,6 @@
-package unionfind;
+package unionfind.quickfind;
+
+import unionfind.quickfind.IQuickFind;
 
 public class QuickFind implements IQuickFind {
 

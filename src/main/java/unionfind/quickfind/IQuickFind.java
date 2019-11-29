@@ -1,4 +1,4 @@
-package unionfind;
+package unionfind.quickfind;
 
 public interface IQuickFind {
 
