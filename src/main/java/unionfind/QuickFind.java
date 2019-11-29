@@ -16,11 +16,24 @@ public class QuickFind implements IQuickFind {
 
     @Override
     public void union(int p, int q) {
+        if (!connected(p, q)) {
+            int itemAtP = ids[p];
+            int itemAtQ = ids[q];
 
+            for (int i = 0; i < ids.length; i++) {
+                if (ids[i] == itemAtP) ids[i] = itemAtQ;
+            }
+        }
     }
 
     @Override
     public boolean connected(int p, int q) {
-        return false;
+        return ids[p] == ids[q];
+    }
+
+    void display() {
+        for (int id : ids) {
+            System.out.print(id + ", ");
+        }
     }
 }
