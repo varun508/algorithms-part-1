@@ -1,8 +1,11 @@
 package stack;
 
-import java.util.Arrays;
+import org.jetbrains.annotations.NotNull;
 
-public class ArrayStack<T> implements IStack<T> {
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class ArrayStack<T> implements IStack<T>, Iterable<T> {
 
     private T[] items;
     private int top = -1;
@@ -41,5 +44,25 @@ public class ArrayStack<T> implements IStack<T> {
     @Override
     public void display() {
         System.out.println(Arrays.toString(items));
+    }
+
+    @NotNull
+    @Override
+    public Iterator<T> iterator() {
+        return new ArrayStackIterator();
+    }
+
+    private class ArrayStackIterator implements Iterator<T> {
+        private int i = top;
+
+        @Override
+        public boolean hasNext() {
+            return i > -1;
+        }
+
+        @Override
+        public T next() {
+            return items[i--];
+        }
     }
 }

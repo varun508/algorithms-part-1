@@ -2,7 +2,10 @@ package stack;
 
 public class Runner {
     public static void main(String[] args) {
+        System.out.println("\n\nResult for Linked Stack ->");
         run(new LinkedStack<>());
+
+        System.out.println("\n\nResult for Array Stack ->");
         run(new ArrayStack<>());
     }
 
