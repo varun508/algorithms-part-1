@@ -1,6 +1,10 @@
 package stack;
 
-public class LinkedStack<T> implements IStack<T> {
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Iterator;
+
+public class LinkedStack<T> implements IStack<T>, Iterable<T> {
 
     private Node first;
 
@@ -34,7 +38,13 @@ public class LinkedStack<T> implements IStack<T> {
         System.out.println();
     }
 
-    class Node {
+    @NotNull
+    @Override
+    public Iterator<T> iterator() {
+        return new LinkedStackIterator();
+    }
+
+    private class Node {
 
         Node(T item) {
             this.item = item;
@@ -42,5 +52,22 @@ public class LinkedStack<T> implements IStack<T> {
 
         Node next;
         T item;
+    }
+
+    private class LinkedStackIterator implements Iterator<T> {
+
+        private Node top = first;
+
+        @Override
+        public boolean hasNext() {
+            return top != null;
+        }
+
+        @Override
+        public T next() {
+            Node node = top;
+            top = top.next;
+            return node.item;
+        }
     }
 }
