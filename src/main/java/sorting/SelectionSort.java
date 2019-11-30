@@ -1,6 +1,6 @@
 package sorting;
 
-public class SelectionSort extends Sort {
+class SelectionSort extends Sort {
 
     @Override
     int[] sort(int[] array) {

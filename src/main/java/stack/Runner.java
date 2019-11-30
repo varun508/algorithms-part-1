@@ -15,7 +15,6 @@ public class Runner {
         stack.push("c");
         stack.push("d");
         stack.push("e");
-
         stack.display();
         stack.pop();
         stack.display();

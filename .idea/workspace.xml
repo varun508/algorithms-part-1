@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f8b6cb-8940-4d9a-91db-3e463be97e43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/InsertionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,9 +11,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/stack/LinkedStack$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/stack/LinkedStack$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/stack/LinkedStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/stack/LinkedStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sorting/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sorting/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/sorting/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/sorting/SelectionSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/stack/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/stack/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stack/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stack/Runner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575050211366</updated>
       <workItem from="1575050215181" duration="18135000" />
-      <workItem from="1575130727175" duration="3968000" />
+      <workItem from="1575130727175" duration="7087000" />
     </task>
     <task id="LOCAL-00001" summary="Finish QuickFind Algorithm">
       <created>1575054603044</created>
