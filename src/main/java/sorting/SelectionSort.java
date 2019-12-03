@@ -12,9 +12,7 @@ class SelectionSort extends Sort {
                 }
             }
             if (i != min) {
-                int temp = array[i];
-                array[i] = array[min];
-                array[min] = temp;
+                swap(array, i, min);
             }
         }
     }
