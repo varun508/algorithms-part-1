@@ -1,9 +1,9 @@
 package sorting;
 
-public class InsertionSort extends Sort {
+class InsertionSort extends Sort {
 
     @Override
-    int[] sort(int[] array) {
+    void sort(int[] array) {
         int i = 0, j = 0;
         while (i != array.length) {
             while (j > 0 && array[j] < array[j - 1]) {
@@ -14,6 +14,5 @@ public class InsertionSort extends Sort {
             }
             j = ++i;
         }
-        return array;
     }
 }

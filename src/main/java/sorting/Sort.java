@@ -1,7 +1,7 @@
 package sorting;
 
-public abstract class Sort {
-    abstract int[] sort(int[] array);
+abstract class Sort {
+    abstract void sort(int[] array);
 
     int[] shuffle(int[] array) {
         for (int i = 0; i < array.length; i++) {

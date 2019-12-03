@@ -12,6 +12,9 @@ public class Runner {
         System.out.print("Insertion Sort: ");
         run(new InsertionSort());
 
+
+        System.out.print("Shell Sort: ");
+        run(new ShellSort());
     }
 
     private static void run(Sort algorithm) {

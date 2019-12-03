@@ -3,7 +3,7 @@ package sorting;
 class SelectionSort extends Sort {
 
     @Override
-    int[] sort(int[] array) {
+    void sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int min = i;
             for (int j = i; j < array.length; j++) {
@@ -17,6 +17,5 @@ class SelectionSort extends Sort {
                 array[min] = temp;
             }
         }
-        return array;
     }
 }
