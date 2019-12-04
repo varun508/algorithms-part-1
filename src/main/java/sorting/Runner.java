@@ -20,15 +20,17 @@ public class Runner {
     }
 
     private static void run(Sort algorithm) {
-        int[] array = new int[10000];
+        int size = 10000;
+        int[] array = new int[size];
 
-        for (int i = 0; i < 10000; i++)
-            array[i] = 10000 - i;
+        for (int i = 0; i < size; i++)
+            array[i] = size - i;
 
         long start = System.currentTimeMillis();
         algorithm.sort(array);
         long end = System.currentTimeMillis();
 
-        System.out.println(Arrays.toString(array) + "\n   Took " + (end - start) + " ms");
+        System.out.print(Arrays.toString(array));
+        System.out.println("\n   Took " + (end - start) + " ms");
     }
 }

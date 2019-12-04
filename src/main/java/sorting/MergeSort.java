@@ -10,34 +10,36 @@ class MergeSort extends Sort {
     private void sort(int[] array, int low, int high) {
         if (low >= high) return;
 
+        if ((high - low) == 1) {
+            if (array[low] > array[high]) {
+                swap(array, low, high);
+            }
+            return;
+        }
+
         int mid = (low + high) / 2;
         sort(array, low, mid);
         sort(array, mid + 1, high);
-        merge(array, low, mid, high);
+        if (array[mid] > array[mid + 1]) merge(array, low, mid, high);
     }
 
     private void merge(int[] merged, int low, int mid, int high) {
         int k = low, i, j;
-        int sizeOfArr1 = mid - low + 1;
-        int sizeOfArr2 = high - mid;
+        int size = high - low + 1;
 
-        int[] arr1 = new int[sizeOfArr1];
-        int[] arr2 = new int[sizeOfArr2];
+        int[] arr = new int[size];
 
-        for (i = 0; i < sizeOfArr1; i++)
-            arr1[i] = merged[low + i];
-
-        for (j = 0; j < sizeOfArr2; j++)
-            arr2[j] = merged[mid + j + 1];
+        for (j = 0; j < size; j++)
+            arr[j] = merged[low + j];
 
         i = 0;
-        j = 0;
-        while (i < sizeOfArr1 && j < sizeOfArr2) {
-            if (arr1[i] <= arr2[j]) merged[k++] = arr1[i++];
-            else merged[k++] = arr2[j++];
+        j = mid - low + 1;
+        while (i <= mid - low && j <= arr.length - 1) {
+            if (arr[i] <= arr[j]) merged[k++] = arr[i++];
+            else merged[k++] = arr[j++];
         }
 
-        while (i < sizeOfArr1) merged[k++] = arr1[i++];
-        while (j < sizeOfArr2) merged[k++] = arr2[j++];
+        while (i <= mid - low) merged[k++] = arr[i++];
+        while (j <= arr.length - 1) merged[k++] = arr[j++];
     }
 }
