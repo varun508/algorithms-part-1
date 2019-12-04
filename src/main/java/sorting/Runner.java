@@ -17,6 +17,9 @@ public class Runner {
 
         System.out.print("Merge Sort: ");
         run(new MergeSort());
+
+        System.out.print("Quick Sort: ");
+        run(new QuickSort());
     }
 
     private static void run(Sort algorithm) {
