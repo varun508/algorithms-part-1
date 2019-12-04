@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1f8b6cb-8940-4d9a-91db-3e463be97e43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/list/IList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/list/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tree/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/Runner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -151,7 +154,7 @@
       <workItem from="1575297662305" duration="12000" />
       <workItem from="1575323671059" duration="15000" />
       <workItem from="1575392907671" duration="5565000" />
-      <workItem from="1575417395174" duration="14695000" />
+      <workItem from="1575417395174" duration="20504000" />
     </task>
     <task id="LOCAL-00001" summary="Finish QuickFind Algorithm">
       <created>1575054603044</created>
