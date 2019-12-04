@@ -12,18 +12,23 @@ public class Runner {
         System.out.print("Insertion Sort: ");
         run(new InsertionSort());
 
-
         System.out.print("Shell Sort: ");
         run(new ShellSort());
+
+        System.out.print("Merge Sort: ");
+        run(new MergeSort());
     }
 
     private static void run(Sort algorithm) {
-        int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        int[] array = new int[10000];
 
-        long start = System.nanoTime();
+        for (int i = 0; i < 10000; i++)
+            array[i] = 10000 - i;
+
+        long start = System.currentTimeMillis();
         algorithm.sort(array);
-        long end = System.nanoTime();
+        long end = System.currentTimeMillis();
 
-        System.out.println(Arrays.toString(array) + "   Took " + (end - start) + " ns");
+        System.out.println(Arrays.toString(array) + "\n   Took " + (end - start) + " ms");
     }
 }
